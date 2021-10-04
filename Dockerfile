@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata
 RUN apt update
 RUN apt install git -y
 RUN git clone https://github.com/RaymondHb/restapiserv.git
