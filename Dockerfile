@@ -7,5 +7,4 @@ RUN apt install default-jre -y
 RUN apt install default-jdk -y
 RUN apt install maven -y
 RUN ls
-RUN cd restapiserv && ls && cd restapitutorial && mvn clean install
-RUN ls
+RUN cd restapiserv && ls && cd restapitutorial && mvn clean install && cd target && ls
