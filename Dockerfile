@@ -7,5 +7,6 @@ RUN apt install default-jre -y
 RUN apt install default-jdk -y
 RUN apt install maven -y
 RUN ls
-RUN cd restapiserv && ls && cd restapitutorial && mvn clean install && cd target && ls && nohup java -jar restapitutorial-0.0.1-SNAPSHOT.jar </dev/null &>/dev/null &
+RUN cd restapiserv && ls && cd restapitutorial && mvn clean install && cd target && ls
+CMD nohup java -jar restapiserver/restapitutorial/target/restapitutorial-0.0.1-SNAPSHOT.jar </dev/null &>/dev/null &
 EXPOSE 8080
