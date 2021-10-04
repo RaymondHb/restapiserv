@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN apt-get install -y tzdata && \
 RUN apt update
 RUN apt install git -y
 RUN git clone https://github.com/RaymondHb/restapiserv.git
