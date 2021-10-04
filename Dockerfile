@@ -1,6 +1,5 @@
 FROM ubuntu
 RUN apt update
-RUN apt update
 RUN apt install git-all -y
 RUN git clone https://github.com/RaymondHb/restapiserv.git
 RUN apt install default-jre -y
